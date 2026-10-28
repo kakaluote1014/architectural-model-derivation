@@ -1,0 +1,23 @@
+{
+  "case": "B-group south row",
+  "sourceVersion": "r13 historical working export",
+  "sourceFileName": "A8-8_SU_户外廊棚支撑补齐_20261027_r13.skp",
+  "sourceModelSha256": "b1672688e63f8a17b0e1d727ed905e0316f24b7441f9e215e6c249fc5877b4e6",
+  "triangles": 270817,
+  "duration": 48,
+  "originMm": [
+    90500,
+    110000,
+    0
+  ],
+  "transform": "metres Y-up: [(SU.x_mm-90500)/1000,SU.z_mm/1000,(110000-SU.y_mm)/1000]",
+  "status": "working model, control rectangles and display surfaces; not construction documentation",
+  "publicEdits": [
+    "corrected side-door and ground detour route",
+    "removed local source paths",
+    "retained third-party notices",
+    "added example identity and compressed-time note"
+  ],
+  "nativeExtractionVerifiedThisPublication": false,
+  "sourceModelWritten": false
+}

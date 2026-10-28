@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>建筑空间解析</title><link rel="stylesheet" href="style.css"></head>
+<body><header><span class="brand">空间 · 生活</span><span id="projectTitle"></span><span class="version">MODEL READING / 0.1.1</span></header>
+<main><aside><small>既有模型 · 空间解析</small><h1 id="chapterTitle"></h1><p id="description"></p><nav id="chapters" aria-label="解析章节"></nav><details><summary>模型来源与表达范围</summary><p id="source"></p><p>展开、色块与标注仅用于阅读模型；不代表真实设计历史或专业验算。默认静音。</p></details></aside>
+<section id="stage" aria-label="三维建筑，拖动旋转和滚轮或双指缩放"><canvas id="scene"></canvas><div id="labels"></div><span class="hint">拖动旋转 · 滚轮 / 双指缩放</span><div id="error" hidden></div><div id="caption"></div></section>
+<section class="controls" aria-label="模型控制"><button id="reset">复位</button><label>楼层展开 <input id="explode" aria-label="楼层展开" type="range" min="0" max="100" value="0"></label><button id="roof" aria-pressed="false">打开屋面</button><button id="traffic" aria-pressed="false">交通高亮</button><button id="functions" aria-pressed="false">功能 / 标注</button><button id="white" aria-pressed="false">白模对照</button></section>
+<section class="activity-panel" aria-label="人物活动设置"><button id="activityToggle" aria-pressed="true">人物活动</button><button id="pathToggle" aria-pressed="true">活动流线</button><select id="routeSelect" aria-label="选择活动情景"><option value="all">全部活动</option></select><span id="activityStatus">按模型阅读空间</span></section>
+<footer><button id="play">播放</button><div class="timeline"><div><span id="clock"></span><span id="chapterIndex"></span></div><input id="timeline" type="range" min="0" step="0.01" value="0" aria-label="讲解进度"></div><button id="restart">从头播放</button></footer></main>
+<script src="vendor/three.min.js"></script><script src="model-data.js"></script><script src="activity.js"></script><script src="people.js"></script><script src="app.js"></script></body></html>

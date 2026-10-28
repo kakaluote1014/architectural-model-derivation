@@ -1,0 +1,52 @@
+{
+  "scope": "Sampled centerline/0.18m lateral clearance at 0.38/1.0/1.5m heights; support within 0.23m. Not continuous collision detection, limb contact, code compliance or native extraction. Public case reuses the corrected walking points; timing is compressed to fit the historical 48s narrative.",
+  "sampleSpacingM": 0.15,
+  "routes": [
+    {
+      "id": "resident",
+      "name": "住户：出门到树下",
+      "evidence": "Historical exported geometry plus selected_spaces.json; authored use scenario, not observed behavior",
+      "status": "illustrative",
+      "lengthM": 82.46782321450515,
+      "maxSpeedMps": 1.2000000000000053,
+      "samples": 611,
+      "maxSupportGapM": 0.14404761904761898,
+      "unsupportedCount": 0,
+      "collisionCount": 0,
+      "unsupported": [],
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "id": "rest",
+      "name": "邻里：长椅休息",
+      "evidence": "Historical exported geometry plus selected_spaces.json; authored use scenario, not observed behavior",
+      "status": "illustrative",
+      "lengthM": 1.7400000000000002,
+      "maxSpeedMps": 0.8000000000000007,
+      "samples": 17,
+      "maxSupportGapM": 0.024499999976251276,
+      "unsupportedCount": 0,
+      "collisionCount": 0,
+      "unsupported": [],
+      "collisions": [],
+      "passed": true
+    },
+    {
+      "id": "neighbor",
+      "name": "邻里：前场交流",
+      "evidence": "Historical exported geometry plus selected_spaces.json; authored use scenario, not observed behavior",
+      "status": "illustrative",
+      "lengthM": 0,
+      "maxSpeedMps": 0,
+      "samples": 2,
+      "maxSupportGapM": 0.024499999976251276,
+      "unsupportedCount": 0,
+      "collisionCount": 0,
+      "unsupported": [],
+      "collisions": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

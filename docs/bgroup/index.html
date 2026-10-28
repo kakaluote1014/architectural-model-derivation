@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="从家门到树下：基于现有SketchUp模型的B组南排住宅动态讲解。">
+  <title>从家门，到树下 · B组住宅动态演示</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="identity" href="#" id="homeLink" aria-label="回到整体视角"><span class="mark">B</span><span>社区生活研究<small>ARCHITECTURE IN MOTION</small></span></a>
+    <div class="project-tag"><i></i> B组南排住宅 <span>三层 · 外廊 · 四树前场</span></div>
+    <button id="freeMode" class="quiet">自由观察 <span>↗</span></button>
+  </header>
+
+  <main>
+    <aside class="story-panel">
+      <div class="eyebrow"><span id="chapterNumber">01</span><span> / 空间讲解</span></div>
+      <h1 id="chapterTitle">从家门，<br>到树下。</h1>
+      <p id="chapterDescription">在社区中找到B组南排住宅，跟随模型，走进日常生活。</p>
+      <div class="chapter-rule"></div>
+      <nav id="chapterNav" aria-label="讲解章节"></nav>
+      <div class="source-note"><span class="dot"></span> 基于历史 r13 导出<br><span>方法来源案例 · 公开校正版</span></div>
+    <p class="public-note">方法来源案例 · r13工作模型 · 交通片段为压缩时间示意，非实际步速或人流计算。<br><a href="../index.html">← 返回 Skill 主页</a> · <a href="NOTICES.html">来源与许可</a></p></aside>
+
+    <section id="stage" aria-label="建筑三维演示，可拖动旋转和滚轮缩放">
+      <canvas id="scene"></canvas>
+      <div id="labels" aria-hidden="true"></div>
+      <div id="sceneCaption"><span class="caption-index">B / 03</span><span id="captionText">一栋住宅，连接室内与公共生活。</span></div>
+      <div class="stage-note" id="stageNote">拖动旋转 · 滚轮缩放</div>
+      <div id="loadStatus"><span></span>正在读取模型几何</div>
+      <div id="fallback" hidden>当前浏览器未启用 WebGL。请使用 Chrome 或 Edge 打开本页，稍后重试。</div>
+    </section>
+
+    <section class="tools" aria-label="模型显示设置">
+      <div class="tools-heading">模型控制 <button id="resetView" aria-label="复位模型显示">↺ 复位</button></div>
+      <label class="slider-row" for="explode">楼层展开 <output id="explodeValue">0%</output></label>
+      <input id="explode" type="range" min="0" max="100" value="0" aria-label="楼层展开程度">
+      <div class="tool-grid">
+        <button id="roofToggle" aria-pressed="false">打开屋面</button>
+        <button id="routeToggle" aria-pressed="false">交通高亮</button>
+        <button id="whiteToggle" aria-pressed="false">白模对照</button>
+        <button id="roomsToggle" aria-pressed="false">户型功能</button>
+      </div>
+    </section>
+
+    <footer class="transport">
+      <button id="play" class="play" aria-label="播放自动讲解"><svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg><span>播放讲解</span></button>
+      <div class="timeline-wrap"><div class="timeline-label"><span id="timeNow">00:00</span><span id="currentStep">01 / 社区定位</span><span>00:48</span></div><input id="timeline" type="range" min="0" max="48" step="0.01" value="0" aria-label="讲解进度"></div>
+      <button id="restart" class="quiet">从头播放 ↺</button>
+    </footer>
+    <div class="film-progress"><i id="filmProgress"></i></div>
+  </main>
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/motion.js"></script>
+  <script src="model-data.js"></script>
+  <script src="space-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

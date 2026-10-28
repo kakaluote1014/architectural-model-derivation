@@ -1,0 +1,834 @@
+{
+  "title": "两层L形 · 上楼、相遇与休息（合成测试）",
+  "mode": "analysis",
+  "source": {
+    "scope": "独立两层L形合成模型，新增已知坐标的21级踏步和长椅，仅测试软件迁移",
+    "coordinateSystem": "metres, Y up",
+    "originMm": [
+      0,
+      0,
+      0
+    ],
+    "transform": "identity; source points already in viewer coordinates",
+    "synthetic": true
+  },
+  "focusZones": [
+    "test-building"
+  ],
+  "roofKinds": [
+    "roof"
+  ],
+  "trafficKinds": [
+    "stair",
+    "walkway"
+  ],
+  "inspectionFloorId": "f0",
+  "floors": [
+    {
+      "id": "f0",
+      "label": "测试1层",
+      "level": 0,
+      "elevation": 0,
+      "offset": 0
+    },
+    {
+      "id": "f1",
+      "label": "测试2层",
+      "level": 1,
+      "elevation": 3.6,
+      "offset": 3
+    },
+    {
+      "id": "r",
+      "label": "测试屋面",
+      "level": 2,
+      "elevation": 7.2,
+      "offset": 6
+    }
+  ],
+  "spaces": [
+    {
+      "label": "测试空间A",
+      "center": [
+        3,
+        0.24,
+        2
+      ],
+      "size": [
+        4,
+        3
+      ],
+      "floorId": "f0",
+      "color": "#c3a26e",
+      "scope": "SYNTHETIC_TEST_ONLY",
+      "evidence": "make_fixture.mjs known coordinates"
+    },
+    {
+      "label": "测试空间B",
+      "center": [
+        3,
+        0.24,
+        8
+      ],
+      "size": [
+        4,
+        3
+      ],
+      "floorId": "f0",
+      "color": "#8fa5ad",
+      "scope": "SYNTHETIC_TEST_ONLY",
+      "evidence": "make_fixture.mjs L-wing"
+    }
+  ],
+  "labels": [
+    {
+      "text": "合成L形 / 仅测试",
+      "position": [
+        8,
+        1,
+        6
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "t": 0,
+      "title": "体量",
+      "text": "合成L形模型，用于软件迁移检查。",
+      "evidence": "make_fixture.mjs / generated triangles"
+    },
+    {
+      "t": 5,
+      "title": "分层",
+      "text": "2层与屋面按配置展开。",
+      "evidence": "known floor height 3.6m"
+    },
+    {
+      "t": 12,
+      "title": "内部",
+      "text": "隐藏上层，显示测试色块。",
+      "evidence": "known synthetic rectangles"
+    },
+    {
+      "t": 18,
+      "title": "入口与上楼",
+      "text": "访客沿已知测试踏步到达二层。",
+      "evidence": "21 steps × 0.18m, synthetic only"
+    },
+    {
+      "t": 34,
+      "title": "相遇与停留",
+      "text": "测试人物在楼上交流，在楼下坐下休息。",
+      "evidence": "Authored synthetic scenario, not behavior observation"
+    },
+    {
+      "t": 51,
+      "title": "归位",
+      "text": "恢复合成建筑，结束活动演示。",
+      "evidence": "original fixture coordinates"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 0,
+      "eye": [
+        23,
+        30.2,
+        29
+      ],
+      "target": [
+        6,
+        3.6,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 2,
+      "eye": [
+        23,
+        30.2,
+        29
+      ],
+      "target": [
+        6,
+        3.6,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 5,
+      "eye": [
+        23,
+        30.2,
+        29
+      ],
+      "target": [
+        6,
+        3.6,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 8,
+      "eye": [
+        23,
+        30.2,
+        29
+      ],
+      "target": [
+        6,
+        6.6,
+        5
+      ],
+      "state": {
+        "explode": 1,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 10,
+      "eye": [
+        23,
+        30.2,
+        29
+      ],
+      "target": [
+        6,
+        6.6,
+        5
+      ],
+      "state": {
+        "explode": 1,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 12,
+      "eye": [
+        18,
+        26.2,
+        23
+      ],
+      "target": [
+        6,
+        1,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 0,
+        "functions": 1,
+        "focus": 0
+      }
+    },
+    {
+      "t": 17,
+      "eye": [
+        18,
+        26.2,
+        23
+      ],
+      "target": [
+        6,
+        1,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 0,
+        "functions": 1,
+        "focus": 0
+      }
+    },
+    {
+      "t": 18,
+      "eye": [
+        16,
+        15,
+        -20
+      ],
+      "target": [
+        3,
+        1,
+        -1
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 1,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 23,
+      "eye": [
+        16,
+        15,
+        -20
+      ],
+      "target": [
+        3,
+        1,
+        -1
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 1,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 30,
+      "eye": [
+        16,
+        20,
+        22
+      ],
+      "target": [
+        5,
+        4,
+        3
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 1,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 43,
+      "eye": [
+        16,
+        20,
+        22
+      ],
+      "target": [
+        5,
+        4,
+        3
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 1,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 49,
+      "eye": [
+        22,
+        23,
+        28
+      ],
+      "target": [
+        6,
+        3,
+        4
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 1,
+        "traffic": 1,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 51,
+      "eye": [
+        23,
+        30,
+        29
+      ],
+      "target": [
+        6,
+        3.6,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    },
+    {
+      "t": 56,
+      "eye": [
+        23,
+        30,
+        29
+      ],
+      "target": [
+        6,
+        3.6,
+        5
+      ],
+      "state": {
+        "explode": 0,
+        "roof": 0,
+        "traffic": 0,
+        "functions": 0,
+        "focus": 0
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "test-visitor",
+      "name": "测试访客：入口与上楼",
+      "actor": {
+        "name": "测试访客",
+        "color": "#b17b36",
+        "heightM": 1.7
+      },
+      "start": 18,
+      "end": 49,
+      "status": "illustrative",
+      "evidence": "Known synthetic coordinates in examples/synthetic/mesh.json; software test only",
+      "waypoints": [
+        {
+          "t": 18,
+          "p": [
+            3,
+            0.025,
+            -7
+          ],
+          "action": "stand",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 19,
+          "p": [
+            3,
+            0.025,
+            -7
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 20.33669202216897,
+          "p": [
+            3,
+            0.205,
+            -6.1499999999999995
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 20.874933735539308,
+          "p": [
+            3,
+            0.385,
+            -5.85
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 21.413175448909644,
+          "p": [
+            3,
+            0.5650000000000001,
+            -5.55
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 21.95141716227998,
+          "p": [
+            3,
+            0.745,
+            -5.25
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 22.489658875650317,
+          "p": [
+            3,
+            0.9249999999999999,
+            -4.949999999999999
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 23.027900589020653,
+          "p": [
+            3,
+            1.105,
+            -4.6499999999999995
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 23.56614230239099,
+          "p": [
+            3,
+            1.285,
+            -4.35
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 24.104384015761326,
+          "p": [
+            3,
+            1.4649999999999999,
+            -4.049999999999999
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 24.64262572913166,
+          "p": [
+            3,
+            1.6449999999999998,
+            -3.75
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 25.180867442501995,
+          "p": [
+            3,
+            1.8249999999999997,
+            -3.45
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 25.71910915587233,
+          "p": [
+            3,
+            2.005,
+            -3.15
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 26.257350869242668,
+          "p": [
+            3,
+            2.185,
+            -2.85
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 26.795592582613004,
+          "p": [
+            3,
+            2.3649999999999998,
+            -2.5500000000000003
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 27.33383429598334,
+          "p": [
+            3,
+            2.545,
+            -2.25
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 27.872076009353677,
+          "p": [
+            3,
+            2.7249999999999996,
+            -1.9499999999999997
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 28.410317722724013,
+          "p": [
+            3,
+            2.905,
+            -1.65
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 28.94855943609435,
+          "p": [
+            3,
+            3.085,
+            -1.35
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 29.486801149464686,
+          "p": [
+            3,
+            3.2649999999999997,
+            -1.0500000000000003
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 30.025042862835022,
+          "p": [
+            3,
+            3.445,
+            -0.7500000000000003
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 30.56328457620536,
+          "p": [
+            3,
+            3.6249999999999996,
+            -0.4499999999999996
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 31.101526289575695,
+          "p": [
+            3,
+            3.8049999999999997,
+            -0.14999999999999983
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 31.94768013572954,
+          "p": [
+            3,
+            3.805,
+            0.4
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": ""
+        },
+        {
+          "t": 35.178449366498775,
+          "p": [
+            3,
+            3.805,
+            2.5
+          ],
+          "action": "talk",
+          "pose": "stand",
+          "label": "",
+          "heading": 1.5707963267948966
+        },
+        {
+          "t": 49,
+          "p": [
+            3,
+            3.805,
+            2.5
+          ],
+          "action": "talk",
+          "pose": "stand",
+          "label": "楼上相遇",
+          "heading": 1.5707963267948966
+        }
+      ]
+    },
+    {
+      "id": "test-talk",
+      "name": "测试交流：楼上相遇",
+      "actor": {
+        "name": "测试邻里",
+        "color": "#668b83",
+        "heightM": 1.65
+      },
+      "start": 34,
+      "end": 49,
+      "status": "illustrative",
+      "evidence": "Known synthetic coordinates in examples/synthetic/mesh.json; software test only",
+      "waypoints": [
+        {
+          "t": 34,
+          "p": [
+            4.4,
+            3.805,
+            2.5
+          ],
+          "action": "talk",
+          "pose": "stand",
+          "label": "楼上相遇",
+          "heading": -1.5707963267948966
+        },
+        {
+          "t": 49,
+          "p": [
+            4.4,
+            3.805,
+            2.5
+          ],
+          "action": "talk",
+          "pose": "stand",
+          "label": "楼上相遇",
+          "heading": -1.5707963267948966
+        }
+      ]
+    },
+    {
+      "id": "test-rest",
+      "name": "测试休息：坐下停留",
+      "actor": {
+        "name": "测试休息者",
+        "color": "#8b8d65",
+        "heightM": 1.72
+      },
+      "start": 34,
+      "end": 49,
+      "status": "illustrative",
+      "evidence": "Known synthetic coordinates in examples/synthetic/mesh.json; software test only",
+      "waypoints": [
+        {
+          "t": 34,
+          "p": [
+            8,
+            0.205,
+            3.8
+          ],
+          "action": "walk",
+          "pose": "stand",
+          "label": "走向测试座椅",
+          "heading": 3.141592653589793
+        },
+        {
+          "t": 36,
+          "p": [
+            8,
+            0.205,
+            2.6
+          ],
+          "action": "sit",
+          "pose": "stand",
+          "label": "坐下",
+          "heading": 0
+        },
+        {
+          "t": 38,
+          "p": [
+            8,
+            0.205,
+            2.1
+          ],
+          "action": "stand",
+          "pose": "sit",
+          "label": "休息",
+          "heading": 0
+        },
+        {
+          "t": 49,
+          "p": [
+            8,
+            0.205,
+            2.1
+          ],
+          "action": "stand",
+          "pose": "sit",
+          "label": "休息",
+          "heading": 0
+        }
+      ]
+    }
+  ],
+  "routeChecks": {
+    "supportKinds": [
+      "display-surface",
+      "landscape",
+      "stair"
+    ],
+    "obstacleKinds": [
+      "wall"
+    ]
+  },
+  "controlTimes": {
+    "functions": 14,
+    "traffic": 24
+  }
+}

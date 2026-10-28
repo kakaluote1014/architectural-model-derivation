@@ -1,0 +1,4 @@
+interface:
+  display_name: "建筑模型解析与交互推导"
+  short_description: "解析建筑真实几何与空间关系，制作有来源、可离线试用的三维交互讲解网页"
+  default_prompt: "使用 $architectural-model-derivation 读取我的建筑模型与资料，制作有依据的离线三维交互解析网页。"

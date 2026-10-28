@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-28",
+  "caseVersion": "historical-public-corrected",
+  "source": "r13 existing exported geometry; 270817 triangles",
+  "scope": "Local public-copy checks; live deployment will be checked independently",
+  "browser": {
+    "target": "local public copy",
+    "scope": "Browser validation of historical public demonstration, not new native extraction or a pedestrian simulation",
+    "checks": {
+      "realWebGLRendered": true,
+      "sourceTriangles": true,
+      "playAdvances": true,
+      "pauseStops": true,
+      "chapter0": true,
+      "chapter1": true,
+      "chapter2": true,
+      "chapter3": true,
+      "chapter4": true,
+      "chapter5": true,
+      "scrub": true,
+      "crossChapterDeterminism": true,
+      "manualExplode": true,
+      "roofToggle": true,
+      "routeToggle": true,
+      "roomsToggle": true,
+      "whiteToggle": true,
+      "rotate": true,
+      "zoom": true,
+      "reset": true,
+      "actorInFrame28.5": true,
+      "actorInFrame31.5": true,
+      "actorInFrame35.5": true,
+      "actorInFrame38": true,
+      "endRestored": true,
+      "silent": true,
+      "licenseNotice": true,
+      "mobileLayout": true,
+      "noPageErrors": true,
+      "noExternalRequests": true
+    },
+    "errors": [],
+    "externalRequests": [],
+    "passed": true
+  },
+  "offline": {
+    "target": "local public copy",
+    "scope": "Browser validation of historical public demonstration, not new native extraction or a pedestrian simulation",
+    "checks": {
+      "realWebGLRendered": true,
+      "sourceTriangles": true,
+      "playAdvances": true,
+      "pauseStops": true,
+      "chapter0": true,
+      "chapter1": true,
+      "chapter2": true,
+      "chapter3": true,
+      "chapter4": true,
+      "chapter5": true,
+      "scrub": true,
+      "crossChapterDeterminism": true,
+      "manualExplode": true,
+      "roofToggle": true,
+      "routeToggle": true,
+      "roomsToggle": true,
+      "whiteToggle": true,
+      "rotate": true,
+      "zoom": true,
+      "reset": true,
+      "actorInFrame28.5": true,
+      "actorInFrame31.5": true,
+      "actorInFrame35.5": true,
+      "actorInFrame38": true,
+      "endRestored": true,
+      "silent": true,
+      "licenseNotice": true,
+      "mobileLayout": true,
+      "noPageErrors": true,
+      "noExternalRequests": true
+    },
+    "errors": [],
+    "externalRequests": [],
+    "passed": true
+  },
+  "homepage": {
+    "desktop": {
+      "overflow": false,
+      "imageReady": true
+    },
+    "mobile": {
+      "overflow": false
+    },
+    "errors": [],
+    "passed": true
+  },
+  "publicExport": {
+    "files": 42,
+    "privatePathPatterns": 0,
+    "nativeFilesOrAudioVideo": 0
+  },
+  "passed": true
+}
