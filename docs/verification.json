@@ -2,7 +2,7 @@
   "date": "2026-10-28",
   "caseVersion": "historical-public-corrected",
   "source": "r13 existing exported geometry; 270817 triangles",
-  "scope": "Local public-copy checks; live deployment will be checked independently",
+  "scope": "Local and live GitHub Pages browser checks of the historical public copy; not new native extraction or professional pedestrian simulation",
   "browser": {
     "target": "local public copy",
     "scope": "Browser validation of historical public demonstration, not new native extraction or a pedestrian simulation",
@@ -93,9 +93,49 @@
     "passed": true
   },
   "publicExport": {
-    "files": 42,
+    "files": 43,
     "privatePathPatterns": 0,
     "nativeFilesOrAudioVideo": 0
   },
-  "passed": true
+  "passed": true,
+  "liveBrowser": {
+    "target": "https://kakaluote1014.github.io/architectural-model-derivation/bgroup/",
+    "scope": "Browser validation of historical public demonstration, not new native extraction or a pedestrian simulation",
+    "checks": {
+      "realWebGLRendered": true,
+      "sourceTriangles": true,
+      "playAdvances": true,
+      "pauseStops": true,
+      "chapter0": true,
+      "chapter1": true,
+      "chapter2": true,
+      "chapter3": true,
+      "chapter4": true,
+      "chapter5": true,
+      "scrub": true,
+      "crossChapterDeterminism": true,
+      "manualExplode": true,
+      "roofToggle": true,
+      "routeToggle": true,
+      "roomsToggle": true,
+      "whiteToggle": true,
+      "rotate": true,
+      "zoom": true,
+      "reset": true,
+      "actorInFrame28.5": true,
+      "actorInFrame31.5": true,
+      "actorInFrame35.5": true,
+      "actorInFrame38": true,
+      "endRestored": true,
+      "silent": true,
+      "licenseNotice": true,
+      "mobileLayout": true,
+      "noPageErrors": true,
+      "noExternalRequests": true
+    },
+    "errors": [],
+    "externalRequests": [],
+    "passed": true
+  },
+  "testedSourceCommit": "0067cd0c53a86c13337014d2190f670628bc5843"
 }
